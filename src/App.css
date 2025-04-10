@@ -41,3 +41,37 @@ body {
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
+/* src/App.css */
+
+/* Tùy chỉnh lại các biến màu nếu cần */
+:root {
+  --mainBlue: #007bff; /* Màu xanh dương chính */
+  --lightBlue: #4ca2cd; /* Màu xanh dương nhạt hơn (ví dụ) */
+  --mainWhite: #ffffff;
+  --mainDark: #343a40; /* Màu tối chính */
+  --mainYellow: #ffc107; /* Màu vàng (ví dụ) */
+  --greyBackground: #f8f9fa; /* Màu nền xám nhạt */
+}
+
+body {
+  font-family: Arial, sans-serif !important; /* Đổi font chữ nếu cần */
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+/* CSS cho Title (có thể giữ nguyên hoặc sửa) */
+.text-title {
+  /* font-family: "Permanent Marker", cursive; */ /* Có thể bỏ font này */
+  font-family: Arial, sans-serif !important; /* Hoặc đổi font khác */
+  letter-spacing: 0.1rem; /* Giảm khoảng cách chữ */
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #49bce2; /* Màu chữ tiêu đề (ví dụ) */
+}
+
+.text-title strong {
+   color: #333; /* Màu chữ phụ của tiêu đề */
+}
+
+
+/* Các style khác bạn cần thêm cho Hero, Doctor, Media section... */
