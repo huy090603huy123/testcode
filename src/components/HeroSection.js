@@ -1,7 +1,7 @@
 // src/components/HeroSection.js
 import React from 'react';
 import styled from 'styled-components';
-import heroBanner from '../assets/images/hero-banner.jpg'; // Thay bằng đường dẫn ảnh của bạn
+import heroBanner from '../assets/images/hero-banner.png'; // Thay bằng đường dẫn ảnh của bạn
 
 export default function HeroSection() {
   return (
