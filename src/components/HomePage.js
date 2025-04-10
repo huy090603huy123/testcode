@@ -1,30 +1,29 @@
-// src/components/HomePage.js (thay thế ProductList.js)
+// src/components/HomePage.js
 import React, { Component } from 'react';
-import Title from './Title'; // Sử dụng lại Title component nếu muốn
+import Title from './Title';
 import SpecialtyCard from './SpecialtyCard';
-import { specialties } from '../specialtyData'; // Import dữ liệu mới
+import DoctorCard from './DoctorCard';
+import HeroSection from './HeroSection';
+import MediaSection from './MediaSection'; // Import MediaSection
+import { specialties } from '../specialtyData';
+import { doctors } from '../doctorData';
 
-// Bạn có thể cần tạo thêm component cho các phần khác (Hero, Bác sĩ, Truyền thông)
-// import HeroSection from './HeroSection';
-// import DoctorSection from './DoctorSection';
-// import MediaSection from './MediaSection';
 
 export default class HomePage extends Component {
-  // Giữ lại state nếu cần cho các phần khác, hoặc xóa đi nếu không dùng context sản phẩm nữa
   state = {
-    specialties: specialties, // Load dữ liệu chuyên khoa
-    // doctors: [], // Có thể thêm state cho bác sĩ, v.v.
+    specialties: specialties,
+    doctors: doctors,
   };
 
   render() {
     return (
       <React.Fragment>
-        {/* <HeroSection /> */} {/* Component cho banner */}
+        <HeroSection />
 
         {/* Phần Chuyên khoa phổ biến */}
-        <div className="py-5">
+        <div className="py-4" style={{ backgroundColor: 'var(--mainWhite)' }}>
           <div className="container">
-            <Title name="Chuyên khoa" title="phổ biến" /> {/* Hoặc tiêu đề khác */}
+            <Title name="Chuyên khoa" title="phổ biến" />
             <div className="row">
               {this.state.specialties.map(specialty => {
                 return <SpecialtyCard key={specialty.id} specialty={specialty} />;
@@ -33,8 +32,20 @@ export default class HomePage extends Component {
           </div>
         </div>
 
-        {/* <DoctorSection doctors={this.state.doctors} /> */} {/* Component cho bác sĩ */}
-        {/* <MediaSection /> */} {/* Component cho truyền thông */}
+        {/* Phần Bác sĩ nổi bật */}
+        <div className="py-4" style={{ backgroundColor: 'var(--greyBackground)' }}>
+          <div className="container">
+            <Title name="Bác sĩ" title="nổi bật" />
+            <div className="row">
+              {this.state.doctors.map(doctor => {
+                return <DoctorCard key={doctor.id} doctor={doctor} />;
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Phần Truyền Thông */}
+        <MediaSection /> {/* Thêm MediaSection vào đây */}
 
       </React.Fragment>
     );
