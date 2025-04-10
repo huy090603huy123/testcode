@@ -1,11 +1,11 @@
 // src/specialtyData.js
 import coXuongKhopImg from './assets/images/specialties/co-xuong-khop.jpg';
 import thanKinhImg from './assets/images/specialties/co-xuong-khop.jpg';
-import tieuHoaImg from './assets/images/specialties/tieu-hoa.jpg';
-import timMachImg from './assets/images/specialties/tim-mach.jpg';
-import taiMuiHongImg from './assets/images/specialties/tai-mui-hong.jpg';
+import tieuHoaImg from './assets/images/specialties/co-xuong-khop.jpg';
+import timMachImg from './assets/images/specialties/co-xuong-khop.jpg';
+import taiMuiHongImg from './assets/images/specialties/co-xuong-khop.jpg';
 import cotSongImg from './assets/images/specialties/co-xuong-khop.jpg';
-import yHocCoTruyenImg from './assets/images/specialties/y-hoc-co-truyen.jpg';
+import yHocCoTruyenImg from './assets/images/specialties/co-xuong-khop.jpg';
 import chamCuuImg from './assets/images/specialties/co-xuong-khop.jpg';
 // Import các ảnh khác tương tự
 

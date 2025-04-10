@@ -1,9 +1,9 @@
 // src/doctorData.js
 import doctor1Img from './assets/images/doctors/doctor1.jpg'; // Thay bằng đường dẫn ảnh thực tế
-import doctor2Img from './assets/images/doctors/doctor2.jpg';
-import doctor3Img from './assets/images/doctors/doctor3.jpg';
-import doctor4Img from './assets/images/doctors/doctor4.jpg';
-import doctor5Img from './assets/images/doctors/doctor5.jpg';
+import doctor2Img from './assets/images/doctors/doctor1.jpg';
+import doctor3Img from './assets/images/doctors/doctor1.jpg';
+import doctor4Img from './assets/images/doctors/doctor1.jpg';
+import doctor5Img from './assets/images/doctors/doctor1.jpg';
 // Import các ảnh khác
 
 export const doctors = [
