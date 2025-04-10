@@ -23,7 +23,7 @@ export default class HomePage extends Component {
         {/* Phần Chuyên khoa phổ biến */}
         <div className="py-4" style={{ backgroundColor: 'var(--mainWhite)' }}>
           <div className="container">
-            <Title name="Chuyên khoa" title="phổ biến" />
+            <Title name="Chuyên khoa" title="phổ biến 1" />
             <div className="row">
               {this.state.specialties.map(specialty => {
                 return <SpecialtyCard key={specialty.id} specialty={specialty} />;
